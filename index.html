@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="botui.min.css" rel="stylesheet">
+        <link href="botui-theme-default.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        
+
+        <script type="text/javascript" src="vue.js"></script>
+        <script type="text/javascript" src="botui.min.js"></script>
+        
+        <title>chat</title>
+    </head>
+    <body>
+
+            <div class="menu">
+                <p>日付</p>
+                <input type="text" id="date">
+                <button id="start" onclick="chat()">start</button>
+                <div>重ならないようにする</div>
+            </div>
+            <div class="chat">
+                <div class="botui-app-container" id="chat-app" style="widows: 500px;">
+                    <!-- チャットの表示  -->
+                    <bot-ui style="widows: 500px;"></bot-ui>
+                </div>
+            </div>
+            
+        <script type="text/javascript" src="readCSV.js"></script>
+    </body>
+</html>
