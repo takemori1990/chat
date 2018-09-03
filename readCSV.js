@@ -1,10 +1,10 @@
 var ui = new BotUI('chat-app');
 
 var chat = function(){
-    var date = document.getElementById('date');
+    var fielName = 'word/' + document.getElementById('date').value + '.csv';
     //alert(date.value=='20180831.csv');
     var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
-    req.open("get", '20180831.csv', true); // アクセスするファイルを指定
+    req.open("get", fielName, true); // アクセスするファイルを指定
     req.overrideMimeType('text/plain; charset=Shift_JIS'); 
     req.send(null); // HTTPリクエストの発行
 	
